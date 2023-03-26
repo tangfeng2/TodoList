@@ -13,6 +13,7 @@ export default {
         const title = ref('')
         const addItem = event => {
             event.preventDefault()
+            if (title.value == '') return
             const newItem = {
                 id: uuidv4(),
                 title: title.value,
