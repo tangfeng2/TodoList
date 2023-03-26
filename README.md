@@ -1,2 +1,2 @@
 # TodoList
-this Project using vue3, data todo list save in localStore
+this project using vue3, todo list save in localStorage
