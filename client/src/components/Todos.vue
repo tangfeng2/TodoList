@@ -16,8 +16,8 @@ export default {
         AddTodo
     },
     setup() {
-        const data = JSON.parse(localStorage.getItem('todos'))
-        const todos = data || ref([])
+        const data = JSON.parse(localStorage.getItem('todos')) || []
+        const todos = ref(data)
         // const getAllTodos = async () => {
         //     try {
         //         const res = await axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
